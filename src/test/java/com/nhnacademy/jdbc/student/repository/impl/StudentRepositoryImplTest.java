@@ -29,6 +29,7 @@ class StudentRepositoryImplTest {
         Random random = new Random();
         Iterator<Integer> iterator = random.ints(20,50).iterator();
         for(int i=1; i<=10; i++){
+            log.info("cnt : {}",i);
             String id="student" + i;
             String name="학생" + i;
             Student.GENDER gender = Student.GENDER.M;
