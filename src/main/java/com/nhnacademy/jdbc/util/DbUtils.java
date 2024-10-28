@@ -17,11 +17,11 @@ public class DbUtils {
 
     static {
         BasicDataSource basicDataSource = new BasicDataSource();
-
+//connection = DriverManager.getConnection("jdbc:mysql://:3306/nhn_academy_10","","");
         //#todo#0 {ip},{database},{username},{password} 설정
-        basicDataSource.setUrl("jdbc:mysql://{ip}:3306/{database}");
-        basicDataSource.setUsername("{username}");
-        basicDataSource.setPassword("{password}");
+        basicDataSource.setUrl("jdbc:mysql://133.186.241.167:3306/nhn_academy_10");
+        basicDataSource.setUsername("nhn_academy_10");
+        basicDataSource.setPassword("hrEgIX$fTXw6kJR&");
 
         basicDataSource.setInitialSize(5);
         basicDataSource.setMaxTotal(5);
